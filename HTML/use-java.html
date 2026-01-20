@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "ja">
+
+  <head>
+    <meta charset = "UTF-8">
+    <title>サイト風に作成</title>
+
+  </head>
+
+  <body bgcolor= "#FFFF66">
+    <link rel = "stylesheet" href = "property.css">
+       
+    <div class = "info">
+      <img src = "background-ver3.jpg" alt = "タイトル画像は!?!?">
+      <div class = "text">
+        <p>JavaScriptの巻</p>
+      </div>
+    </div>
+
+
+    <!---ここから下は文章--->
+    <!---挨拶(自己紹介含む?)--->
+    <div class = "greet">
+      <!---挨拶--->
+      <p><span class = "greeting">おはこんばんにちわ</span></p>
+      <p>HTML/CSS練習を始めたばかりのWです</p>
+      <p>今回は<span class = "aka">JavaScript</span>を用いて色々試したいと思います</p>
+      <p>JavaScriptが使えたらもっと出来ることが増えるんだろうなぁ～って思ったのでこの機に触っていきましょう</p>
+      <p>まずはどんなことができるのかを簡単にまとめてみました！！！</p>
+    </div>
+
+    <div class = "jvs-area">
+      <h1 class = "itiran">JavaScriptで出来ること一覧</h1>
+      <ol class = "jvs">
+        <li><a href = "#1">ボタン追加</a></li>
+        <li><a href = "#2">HTMLの内容を動的に変更</a></li>
+        <li><a href = "#3">CSSを後から変更できる(アニメーションも可能)</a></li>
+        <li><a href = "#4">フォーム作成・入力</a></li>
+        <li><a href = "#5">ゲーム作成</a></li>
+        <li><a href = "#6">時間・タイマー処理</a></li>
+        <li><a href = "#7">スクロールやマウスに反応</a></li>
+        <li><a href = "#8">サーバーと通信</a></li>
+      </ol>
+    </div>
+
+    <h1 class = "midasi" id = "1">1.ボタン追加</h1>
+    <div class = "cmt">
+      <p>ボタンでメッセージ表示や画像の切り替え、メニュー開閉などが可能になる</p>
+      <p>まずは、ボタンを用いて、メッセージを表示してみます！</p>
+    
+      <p>メッセージ表示</p>
+      <button onclick= "showMessage()">押せぇ!!!</button>
+      <p id = "msg"></p>				<!---ここにメッセージを出す--->
+    </div>
+
+    <h1 class = "midasi" id = "2">2.HTMLの内容を動的に変更</h1>
+    <div class = "cmt">
+      <p>JavaScriptでHTMLの内容を変更することが出来る</p>
+      <p>まずは下記の文字列を別の文字列に変更してみる</p>
+
+      <div>1: このお好み焼きは美味しくない : <button id = "btn1">変更</button><div id = "container1">このお好み焼きは美味しくない</div></div>
+      <br>
+      <div>2: 野菜炒め定食 : <button id = "btn2">変更</button><div id = "container2">野菜炒め定食</div></div>
+
+      <br><div>JavascriptでHTMLの文字を変えるのは<span class = "aka">DOM操作</span>しかない!!!!!</div>
+
+    </div>
+   
+    <h1 class = "midasi" id = "3">3.CSSを後から変更できる(アニメーションも可能)</h1>
+    <div class = "cmt">
+      <p>初期設定されたCSSを後から変更できて、アニメーションも可能なのはしゅごい!!!</p>
+      <p>今回は色を変更したい.....早速試してみよう！！</p>
+      初期設定として色は赤になってます<br><br>
+      <input id = "red-button" type = "button" value = "赤">
+      <input id = "blue-button" type = "button" value = "青">
+      <input id = "yellow-button" type = "button" value = "黄色">
+      <div class = "buttoncolor"></div>
+
+      <br>このように色が1秒かけて変化するアニメーションを作成できた
+      <div class = "small">ChatGPTやサイトを見まくったのであんまり理解できてないとは言えない.....</div>
+    </div>
+
+    <h1 class = "midasi" id = "4">4.フォーム作成・入力</h1>
+    <div class = "cmt">
+      フォーム
+    </div>
+  <script src = "test.js"></script>			<!---Javascript参照宣言--->
+  <footer>Copyright© HTML/CSS/JavaScriptむずい All Rights Reserved.</footer>
+  </body>
+</html>
